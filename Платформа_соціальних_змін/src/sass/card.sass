@@ -1,0 +1,261 @@
+@import "normalizes.scss"
+@import "resets.scss"
+@import "style.sass"
+@import "about.sass"
+
+
+.event-card
+    overflow: hidden
+
+
+
+
+#mentor-1, #mentor-2, #mentor-3, #mentor-4
+    line-height: 20px
+    .modal-mentor
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+
+    .modal-mentor img 
+        max-width: 40%
+        border-radius: 24px
+        height: auto
+
+    .modal-mentor .text 
+        padding-left: 24px
+        font-size: 18px
+        flex: 1
+    .modal-content 
+        width: 100% 
+        background-color: white
+        padding: 32px
+        border-radius: 24px
+
+    .modal-mentor .title 
+        font-size: 18px
+        font-weight: 500
+        margin-bottom: 24px
+    .modal-close
+        path
+            stroke: black !important
+.webinar-iner-main-section
+    padding-top: 64px
+    overflow: hidden
+    position: relative
+    &__background
+        position: absolute
+        right: 1%
+        top: -1.5%
+    li
+        list-style-type: disc
+    &__speakers
+        margin: 0 auto
+        max-width: 864px
+        .teachers-section
+            &__teacher
+                border: 0
+                padding: 0
+                flex: 1 1 46%
+            &__name
+                bottom: 0%
+                color: white
+    &__speakers-cards
+        justify-content: center
+        display: flex
+        flex-wrap: wrap
+        gap: 24px
+    &__information
+        margin-bottom: 60px
+    &__title
+        line-height: 52.8px
+        text-transform: uppercase
+        margin-bottom: 40px
+    &__card
+        min-height: 588px
+
+        .event-card
+            &__hashtag
+                bottom: 0
+    &__date
+        line-height: 28px
+        color: $color-blue
+        font-size: 1.25em
+        margin-bottom: 32px
+        font-weight: 400
+    &__subtitle
+        color: $color-black
+        font-size: 1.5em
+        line-height: 33.6px
+        margin-bottom: 16px
+        font-weight: 500
+    &__container
+        display: flex
+        flex-direction: column
+    &__card-text
+        line-height: 27.9px
+        font-size: 1.125em
+        margin-bottom: 32px
+        font-weight: 300
+
+    &__price
+        font-size: 1.25em
+        margin-bottom: 115px
+        font-weight: 500
+        line-height: 28px
+        span
+            color: $color-blue
+            font-weight: 400
+
+    &__information
+        display: flex
+        justify-content: space-between
+    &__card
+        img
+            width: 100%
+            min-height: 600px
+
+            border: 0
+            flex: 0 0 50%
+    &__text
+
+        flex: 0 0 50%
+    &__about
+        max-width: 866px
+        margin: 0 auto
+        flex: 0 1 50%
+        .webinar-iner-main-section__subtitle
+            margin-bottom: 1.5em
+        .webinar-iner-main-section__card-text
+            margin-bottom: 24px
+            &:last-child
+                margin-bottom: 0px
+    &__module
+        margin: 0 auto
+
+    &__get
+        margin: 0 auto
+        .webinar-iner-main-section__card-text
+            margin: 0
+        ul
+            margin-left: 20px
+            line-height: 30px
+    &__speakers-subtitle
+        margin-bottom: 24px
+    &__launch
+        position: relative
+        border-radius: 24px
+        padding: 60px 121px
+        display: flex
+        flex-direction: column
+        align-items: center
+        background-color: $color-blue
+        max-width: 866px
+        margin: 0 auto
+        margin-bottom: 180px
+    &__events
+        display: flex
+        flex-direction: column
+        margin-bottom: 180px
+        .second-section__soon-events
+    &__launch-title
+        text-align: center
+        z-index: 1
+        font-weight: 500
+        line-height: 38.4px
+        color: white
+        font-size: 2em
+        margin-bottom: 24px
+    &__launch-text
+        z-index: 1
+        line-height: 27.9px
+        text-align: center
+        color: white
+        font-size: 1.125em
+        font-weight: 300
+        opacity: 0.8
+        margin-bottom: 40px
+    &__launch-btn
+        z-index: 1
+        background-color: white
+        color: $color-blue
+        border-radius: 300px
+
+.launch__background
+    position: absolute
+    z-index: 0
+    top: 0%
+    left: 0%
+.gray-block
+    max-width: 866px
+    border-radius: 24px
+    background-color: #F9F9F9
+    padding: 40px
+    margin-bottom: 60px
+
+.question-section
+    &__accordions
+        min-height: 560px
+        width: 100%
+        justify-content: space-between
+        .accordion-item
+            border: 0
+            background-color: rgb(217, 235, 255)
+        .accordion-button
+            line-height: 24px
+            font-weight: 500
+            font-size: 1.25em
+            padding: 24px 32px
+            color: black
+            background-color: rgb(217, 235, 255)
+    &__title
+        font-size: 1.5em
+@media (min-width: 576px) 
+    .modal-dialog 
+        max-width: 856px
+        margin-right: auto
+        margin-left: auto
+    
+
+
+@media (min-width: 1080px)
+    .modal-dialog modal-dialog-centered
+        max-width: 856px !important
+@media (max-width: 660px)
+
+    .webinar-iner-main-section__information
+        flex-wrap: wrap
+    .webinar-iner-main-section__text
+        flex: 1 1 100%
+    .webinar-iner-main-section__launch
+        border-radius: 24px
+        padding: 40px 60px
+        display: flex
+        flex-direction: column
+        align-items: center
+        background-color: #007AFF
+        max-width: 100%
+        margin: 0
+        margin-bottom: 100px
+
+@media (max-width: 959px)
+    .event-card
+        flex: 1 1 48%
+        min-width: 300px
+@media (max-width: 500px)
+    .modal-mentor
+        display: flex
+        flex-direction: column
+
+    .modal-mentor img 
+        max-width: 100%
+        border-radius: 24px
+        height: auto
+
+    .modal-mentor .text 
+        margin-top: 20px
+        padding-left: 0
+    .modal-content 
+
+    .modal-mentor .title 
+        margin-top: 20px

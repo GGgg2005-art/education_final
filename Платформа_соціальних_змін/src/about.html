@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <title>Про академію</title>
+  </head>
+
+  <body>
+    <div class="modal fade" id="exampleModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <svg
+            class="modal-close"
+            data-bs-dismiss="modal"
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13 1L1 13M1 1L13 13"
+              stroke="white"
+              style="stroke: white; stroke-opacity: 1"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+          <h2 class="modal-title">Вхід</h2>
+          <input
+            type="email"
+            id="exampleFormControlInput1"
+            placeholder="E-mail"
+          />
+          <div class="password-container">
+            <input
+              type="text"
+              class="inputPassword"
+              id="inputPassword"
+              placeholder="Пароль"
+            />
+            <span class="toggle-password" onclick="togglePassword()">
+              <svg
+                width="22"
+                height="20"
+                viewBox="0 0 22 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.74294 3.09232C10.1494 3.03223 10.5686 3 11.0004 3C16.1054 3 19.4553 7.50484 20.5807 9.28682C20.7169 9.5025 20.785 9.61034 20.8231 9.77667C20.8518 9.90159 20.8517 10.0987 20.8231 10.2236C20.7849 10.3899 20.7164 10.4985 20.5792 10.7156C20.2793 11.1901 19.8222 11.8571 19.2165 12.5805M5.72432 4.71504C3.56225 6.1817 2.09445 8.21938 1.42111 9.28528C1.28428 9.50187 1.21587 9.61016 1.17774 9.77648C1.1491 9.9014 1.14909 10.0984 1.17771 10.2234C1.21583 10.3897 1.28393 10.4975 1.42013 10.7132C2.54554 12.4952 5.89541 17 11.0004 17C13.0588 17 14.8319 16.2676 16.2888 15.2766M2.00042 1L20.0004 19M8.8791 7.87868C8.3362 8.42157 8.00042 9.17157 8.00042 10C8.00042 11.6569 9.34356 13 11.0004 13C11.8288 13 12.5788 12.6642 13.1217 12.1213"
+                  stroke="#007AFF"
+                  style="
+                    stroke: #007aff;
+                    stroke: color(display-p3 0 0.4784 1);
+                    stroke-opacity: 1;
+                  "
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </div>
+          <button class="sign_in modal-sign_in">Увійти</button>
+          <div class="modal-or">
+            <hr class="modal-line" />
+            <p>або</p>
+            <hr class="modal-line" />
+          </div>
+          <div class="social-login-buttons">
+            <button class="social-button google">
+              <svg
+                width="24.000000"
+                height="24.000000"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <clipPath id="clip403_13230">
+                  <rect
+                    id="Social icon"
+                    rx="0.000000"
+                    width="23.500000"
+                    height="23.500000"
+                    transform="translate(0.250000 0.250000)"
+                    fill="white"
+                    fill-opacity="0"
+                  />
+                </clipPath>
+                <rect
+                  rx="0.000000"
+                  width="23.500000"
+                  height="23.500000"
+                  transform="translate(0.250000 0.250000)"
+                  fill="#FFFFFF"
+                  fill-opacity="0"
+                />
+                <g clip-path="url(#clip403_13230)">
+                  <path
+                    d="M23.76 12.27C23.76 11.46 23.7 10.64 23.55 9.83L12.24 9.83L12.24 14.45L18.72 14.45C18.45 15.94 17.58 17.26 16.32 18.1L16.32 21.1L20.18 21.1C22.46 19.01 23.76 15.92 23.76 12.27Z"
+                    fill="#4285F4"
+                    fill-opacity="1.000000"
+                    fill-rule="nonzero"
+                  />
+                  <path
+                    d="M12.24 24C15.47 24 18.2 22.93 20.19 21.1L16.32 18.1C15.25 18.83 13.86 19.25 12.24 19.25C9.11 19.25 6.45 17.13 5.5 14.3L1.51 14.3L1.51 17.39C3.55 21.44 7.7 24 12.24 24Z"
+                    fill="#34A853"
+                    fill-opacity="1.000000"
+                    fill-rule="nonzero"
+                  />
+                  <path
+                    d="M5.5 14.3C4.99 12.8 4.99 11.19 5.5 9.7L5.5 6.61L1.51 6.61C-0.19 10 -0.19 14 1.51 17.39L5.5 14.3Z"
+                    fill="#FBBC04"
+                    fill-opacity="1.000000"
+                    fill-rule="nonzero"
+                  />
+                  <path
+                    d="M12.24 4.74C13.95 4.72 15.6 5.36 16.84 6.54L20.26 3.12C18.1 1.08 15.22 -0.04 12.24 0C7.7 0 3.55 2.55 1.51 6.61L5.5 9.7C6.45 6.86 9.1 4.74 12.24 4.74Z"
+                    fill="#EA4335"
+                    fill-opacity="1.000000"
+                    fill-rule="nonzero"
+                  />
+                </g>
+              </svg>
+              Вхід через Google
+            </button>
+            <button class="social-button facebook">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_403_13233)">
+                  <path
+                    d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z"
+                    fill="#1877F2"
+                    style="
+                      fill: #1877f2;
+                      fill: color(display-p3 0.0941 0.4667 0.949);
+                      fill-opacity: 1;
+                    "
+                  />
+                  <path
+                    d="M16.6711 15.4688L17.2031 12H13.875V9.75C13.875 8.80102 14.34 7.875 15.8306 7.875H17.3438V4.92188C17.3438 4.92188 15.9705 4.6875 14.6576 4.6875C11.9166 4.6875 10.125 6.34875 10.125 9.35625V12H7.07812V15.4688H10.125V23.8542C11.3674 24.0486 12.6326 24.0486 13.875 23.8542V15.4688H16.6711Z"
+                    fill="white"
+                    style="fill: white; fill-opacity: 1"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_403_13233">
+                    <rect
+                      width="24"
+                      height="24"
+                      fill="white"
+                      style="fill: white; fill-opacity: 1"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              Вхід через Facebook
+            </button>
+          </div>
+          <p class="modal-to-registration">
+            У вас ще немає аккаунта?
+            <button
+              class="registration"
+              data-bs-toggle="modal"
+              data-bs-target="#RegistrationModal"
+            >
+              Зареєструватися
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="RegistrationModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <svg
+            class="modal-close"
+            data-bs-dismiss="modal"
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13 1L1 13M1 1L13 13"
+              stroke="white"
+              style="stroke: white; stroke-opacity: 1"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <h2 class="modal-title">Реєстрація</h2>
+          <div class="social-login-buttons">
+            <button class="social-button google">
+              <svg
+                width="24.000000"
+                height="24.000000"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <clipPath id="clip403_13230">
+                  <rect
+                    id="Social icon"
+                    rx="0.000000"
+                    width="23.500000"
+                    height="23.500000"
+                    transform="translate(0.250000 0.250000)"
+                    fill="white"
+                    fill-opacity="0"
+                  />
+                </clipPath>
+                <rect
+                  rx="0.000000"
+                  width="23.500000"
+                  height="23.500000"
+                  transform="translate(0.250000 0.250000)"
+                  fill="#FFFFFF"
+                  fill-opacity="0"
+                />
+                <g clip-path="url(#clip403_13230)">
+                  <path
+                    d="M23.76 12.27C23.76 11.46 23.7 10.64 23.55 9.83L12.24 9.83L12.24 14.45L18.72 14.45C18.45 15.94 17.58 17.26 16.32 18.1L16.32 21.1L20.18 21.1C22.46 19.01 23.76 15.92 23.76 12.27Z"
+                    fill="#4285F4"
+                    fill-opacity="1.000000"
+                    fill-rule="nonzero"
+                  />
+                  <path
+                    d="M12.24 24C15.47 24 18.2 22.93 20.19 21.1L16.32 18.1C15.25 18.83 13.86 19.25 12.24 19.25C9.11 19.25 6.45 17.13 5.5 14.3L1.51 14.3L1.51 17.39C3.55 21.44 7.7 24 12.24 24Z"
+                    fill="#34A853"
+                    fill-opacity="1.000000"
+                    fill-rule="nonzero"
+                  />
+                  <path
+                    d="M5.5 14.3C4.99 12.8 4.99 11.19 5.5 9.7L5.5 6.61L1.51 6.61C-0.19 10 -0.19 14 1.51 17.39L5.5 14.3Z"
+                    fill="#FBBC04"
+                    fill-opacity="1.000000"
+                    fill-rule="nonzero"
+                  />
+                  <path
+                    d="M12.24 4.74C13.95 4.72 15.6 5.36 16.84 6.54L20.26 3.12C18.1 1.08 15.22 -0.04 12.24 0C7.7 0 3.55 2.55 1.51 6.61L5.5 9.7C6.45 6.86 9.1 4.74 12.24 4.74Z"
+                    fill="#EA4335"
+                    fill-opacity="1.000000"
+                    fill-rule="nonzero"
+                  />
+                </g>
+              </svg>
+              Вхід через Google
+            </button>
+            <button class="social-button facebook">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_403_13233)">
+                  <path
+                    d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z"
+                    fill="#1877F2"
+                    style="
+                      fill: #1877f2;
+                      fill: color(display-p3 0.0941 0.4667 0.949);
+                      fill-opacity: 1;
+                    "
+                  />
+                  <path
+                    d="M16.6711 15.4688L17.2031 12H13.875V9.75C13.875 8.80102 14.34 7.875 15.8306 7.875H17.3438V4.92188C17.3438 4.92188 15.9705 4.6875 14.6576 4.6875C11.9166 4.6875 10.125 6.34875 10.125 9.35625V12H7.07812V15.4688H10.125V23.8542C11.3674 24.0486 12.6326 24.0486 13.875 23.8542V15.4688H16.6711Z"
+                    fill="white"
+                    style="fill: white; fill-opacity: 1"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_403_13233">
+                    <rect
+                      width="24"
+                      height="24"
+                      fill="white"
+                      style="fill: white; fill-opacity: 1"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              Вхід через Facebook
+            </button>
+          </div>
+          <div class="modal-or">
+            <hr class="modal-line" />
+            <p>або</p>
+            <hr class="modal-line" />
+          </div>
+          <input type="text" id="inputName" placeholder="І'мя" />
+          <input type="text" id="inputSurname" placeholder="Прізвище" />
+          <input
+            type="tel"
+            id="inputNumber"
+            placeholder="Телефон"
+            pattern="^\+380\s\(\d{2}\)\s\d{3}-\d{2}-\d{2}$"
+          />
+          <input
+            type="email"
+            id="exampleFormControlInput2"
+            placeholder="E-mail"
+          />
+
+          <div class="password-container">
+            <input
+              type="password"
+              class="inputPassword"
+              id="inputPassword2"
+              placeholder="Пароль"
+            />
+            <span class="toggle-password" onclick="togglePassword()">
+              <svg
+                width="22"
+                height="20"
+                viewBox="0 0 22 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.74294 3.09232C10.1494 3.03223 10.5686 3 11.0004 3C16.1054 3 19.4553 7.50484 20.5807 9.28682C20.7169 9.5025 20.785 9.61034 20.8231 9.77667C20.8518 9.90159 20.8517 10.0987 20.8231 10.2236C20.7849 10.3899 20.7164 10.4985 20.5792 10.7156C20.2793 11.1901 19.8222 11.8571 19.2165 12.5805M5.72432 4.71504C3.56225 6.1817 2.09445 8.21938 1.42111 9.28528C1.28428 9.50187 1.21587 9.61016 1.17774 9.77648C1.1491 9.9014 1.14909 10.0984 1.17771 10.2234C1.21583 10.3897 1.28393 10.4975 1.42013 10.7132C2.54554 12.4952 5.89541 17 11.0004 17C13.0588 17 14.8319 16.2676 16.2888 15.2766M2.00042 1L20.0004 19M8.8791 7.87868C8.3362 8.42157 8.00042 9.17157 8.00042 10C8.00042 11.6569 9.34356 13 11.0004 13C11.8288 13 12.5788 12.6642 13.1217 12.1213"
+                  stroke="#007AFF"
+                  style="
+                    stroke: #007aff;
+                    stroke: color(display-p3 0 0.4784 1);
+                    stroke-opacity: 1;
+                  "
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </div>
+          <div class="password-container">
+            <input
+              type="password"
+              class="inputPassword"
+              id="confirmPassword"
+              aria-describedby="passwordHelpBlock"
+              placeholder="Підтвердіть пароль"
+            />
+            <span class="toggle-password" onclick="togglePassword()">
+              <svg
+                width="22"
+                height="20"
+                viewBox="0 0 22 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.74294 3.09232C10.1494 3.03223 10.5686 3 11.0004 3C16.1054 3 19.4553 7.50484 20.5807 9.28682C20.7169 9.5025 20.785 9.61034 20.8231 9.77667C20.8518 9.90159 20.8517 10.0987 20.8231 10.2236C20.7849 10.3899 20.7164 10.4985 20.5792 10.7156C20.2793 11.1901 19.8222 11.8571 19.2165 12.5805M5.72432 4.71504C3.56225 6.1817 2.09445 8.21938 1.42111 9.28528C1.28428 9.50187 1.21587 9.61016 1.17774 9.77648C1.1491 9.9014 1.14909 10.0984 1.17771 10.2234C1.21583 10.3897 1.28393 10.4975 1.42013 10.7132C2.54554 12.4952 5.89541 17 11.0004 17C13.0588 17 14.8319 16.2676 16.2888 15.2766M2.00042 1L20.0004 19M8.8791 7.87868C8.3362 8.42157 8.00042 9.17157 8.00042 10C8.00042 11.6569 9.34356 13 11.0004 13C11.8288 13 12.5788 12.6642 13.1217 12.1213"
+                  stroke="#007AFF"
+                  style="
+                    stroke: #007aff;
+                    stroke: color(display-p3 0 0.4784 1);
+                    stroke-opacity: 1;
+                  "
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </div>
+
+          <label>
+            <input class="real-checkbox" type="checkbox" id="confirmDog" />
+            <span class="custom-checkbox"></span>
+            Я примаю <a href="confident.html"> Договір публічної оферти</a>
+          </label>
+          <!-- ТУТ КАПЧА -->
+          <button class="sign_in modal-sign_in">Зареєструватися</button>
+          <p class="modal-to-registration">
+            У вас є аккаунт?
+            <button
+              class="registration"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Увійти
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <section class="about-start-section">
+      <svg
+        class="about-start-section__background-svg"
+        width="1030.478516"
+        height="721.044067"
+        viewBox="0 0 1030.48 721.044"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <defs />
+        <g opacity="0.100000">
+          <path
+            id="Vector"
+            d="M516.17 645.1C625.93 518.38 668.9 282.55 716.1 146.09C731.38 101.93 758.84 62.63 796.49 34.91C1037.31 -142.4 1166.18 481.91 790.51 635.74C726.54 661.93 652.3 640.2 613.26 583.25C612.09 581.53 610.91 579.78 609.74 577.99C533.27 460.91 464.58 367.98 403.37 295.59C-114.21 -316.46 -97.49 540.39 271.36 699.86C356.23 736.56 455.6 715.03 516.17 645.1Z"
+            stroke="#007CFF"
+            stroke-opacity="1.000000"
+            stroke-width="7.000000"
+            stroke-linejoin="round"
+          />
+        </g>
+      </svg>
+      <div class="container about-start-section__container">
+        <header class="about-start-section__header header">
+          <a class="about-start-section__icon icon" href="index.html">
+            <img src="icons/logo-blue.svg" alt="" />
+          </a>
+          <nav class="about__nav nav-menu">
+            <ul class="nav-menu__list back">
+              <li class="nav-menu__list-item">
+                <a href="calendar.html">Календар</a>
+              </li>
+              <li class="nav-menu__list-item">
+                <a href="courses.html">Курси</a>
+              </li>
+              <li class="nav-menu__list-item">
+                <a href="webinars.html">Вебінари</a>
+              </li>
+              <li class="nav-menu__list-item">
+                <a href="about.html">Про академію</a>
+              </li>
+              <li class="nav-menu__list-item">
+                <a href="contacts.html">Контакти</a>
+              </li>
+              <li class="nav-menu__list-item">
+                <button
+                  class="sign_in"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Увійти
+                  <img src="icons/right-white.svg" alt="" />
+                </button>
+              </li>
+            </ul>
+          </nav>
+          <div class="burger-menu burger-blue background-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </header>
+        <div class="about-start-section__main">
+          <h2 class="about-start-section__title title-black">ПРО АКАДЕМІЮ</h2>
+          <div class="about-start-section__text-image">
+            <div class="about-start-section__info">
+              <div class="about-start-section__text">
+                <h3 class="about-start-section__subtitle">
+                  Академія соціального <br />
+                  підприємництва — освітній проєкт <br />
+                  Платформи соціальних змін.
+                </h3>
+                <p class="about-start-section__subtext">
+                  Тут ви отримаєте заряд енергії для втілення <br />
+                  соціальних змін, актуальні знання та нові знайомства! 
+                </p>
+              </div>
+              <a
+                href="#about-second-section"
+                class="about-start-section__more-info more-info"
+              >
+                <div class="more-info__circle circle">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 19V5"
+                      stroke="white"
+                      style="stroke: #18163b; stroke-opacity: 1"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M17 13.999L11.999 19L6.99805 13.999"
+                      stroke="white"
+                      style="stroke: #18163b; stroke-opacity: 1"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <p class="more-info__text">Дізнатися більше</p>
+              </a>
+            </div>
+            <div class="about-start-section__image">
+              <img src="img/about_image.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about-second-section" class="about-second-section">
+      <svg
+        class="about-second-section__background"
+        width="820"
+        height="972"
+        viewBox="0 0 820 972"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          opacity="0.1"
+          d="M1146.09 103.939C1055.41 26.9633 923.449 19.9653 820.293 88.9194C633.379 213.866 485.745 502.814 372.589 662.194C335.963 713.78 286.165 754.827 228.34 777.393C-141.5 921.724 -51.8716 71.9497 475.994 5.04597C565.876 -6.34526 649.344 47.6283 675.039 134.687C675.81 137.307 676.568 139.981 677.304 142.703C725.418 320.341 773.532 464.154 820.581 578.865C1218.38 1548.76 1540.2 438.472 1146.09 103.939Z"
+          stroke="#007CFF"
+          style="
+            stroke: #007cff;
+            stroke: color(display-p3 0 0.4863 1);
+            stroke-opacity: 1;
+          "
+          stroke-width="7"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+      <div class="container about-second-section__container">
+        <h2 class="about-second-section__title title-black">НАШІ ДОСЯГНЕННЯ</h2>
+        <div class="about-second-section__notion">
+          <div class="about-second-section__note note">
+            <h3>11</h3>
+            <p>років</p>
+          </div>
+          <div class="about-second-section__note note">
+            <h3>8000+</h3>
+            <p>слухачів</p>
+          </div>
+          <div class="about-second-section__note note">
+            <h3>10000</h3>
+            <p>навчальних годин</p>
+          </div>
+          <div class="about-second-section__note note">
+            <h3>100+</h3>
+            <p>позитивних відгуків</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-third-section">
+      <div class="about-third-section__container container">
+        <div class="about-third-section__content">
+          <h2 class="about-third-section__title title-black">
+            ФУНДАМЕНТ <br />
+            НАШОЇ ДІЯЛЬНОСТІ
+          </h2>
+          <div class="about-third-section__blocks blocks">
+            <svg
+              class="about-third-section__background"
+              width="781"
+              height="539"
+              viewBox="0 0 781 539"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.1"
+                d="M720.51 160.82C677.415 103.843 602.41 80.4952 535.063 104.457C413.032 147.876 294.37 290.085 210.69 363.867C183.605 387.748 150.185 403.716 114.316 408.024C-115.095 435.575 35.8954 -33.2493 347.045 6.32247C400.026 13.061 441.668 55.9321 446.24 109.084C446.376 110.684 446.499 112.312 446.603 113.964C453.452 221.785 464.262 310.42 477.866 382.393C592.893 990.928 907.806 408.443 720.51 160.82Z"
+                stroke="#007AFF"
+                style="
+                  stroke: #007aff;
+                  stroke: color(display-p3 0 0.4784 1);
+                  stroke-opacity: 1;
+                "
+                stroke-width="7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <div class="blocks__block">
+              <h3>Інновації милосердя</h3>
+              <p>
+                Творимо зміни завдяки новим бізнесовим підходам до вирішення
+                соціальних проблем. Розвиваємо сучасну освіту з соціального
+                підприємництва, яка об’єднує практики міжнародної бізнес-освіти
+                та досвід українських та закордонних соціальних підприємств.
+              </p>
+            </div>
+            <div class="blocks__block">
+              <h3>Чіткий план дій</h3>
+              <p>
+                Допомагаємо сформулювати очікування від курсів, обрати програму,
+                яка відповідає вашим запитам. До нас приходять з ідеєю, а
+                виходять з чітким планом дій розвитку соціального бізнесу.
+              </p>
+            </div>
+            <div class="blocks__block">
+              <h3>Перший соціальний кластер</h3>
+              <p>
+                Сформували екосистему для об’єднання соціальних стартапів, щоб
+                розвивати соціальне підприємництво в Україні й залучати
+                інвестиції. У цьому нам допомогли державно-приватне партнерство,
+                підприємницькі ініціативи та соціальна відповідальність бізнесу.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="teachers-section">
+      <div class="teachers-section__container container">
+        <div class="teachers-section__title-buttons">
+          <h2 class="teachers-section__title title-black">ВИКЛАДАЧІ</h2>
+          <div class="teachers-section__buttons">
+            <button
+              class="carousel-control-prev teachers-section__button-prev"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="prev"
+            >
+              <div class="teachers-section__circle-prev circle">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 19V5"
+                    stroke="white"
+                    style="stroke: #007aff; stroke-opacity: 1"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17 13.999L11.999 19L6.99805 13.999"
+                    stroke="white"
+                    style="stroke: #007aff; stroke-opacity: 1"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </button>
+            <button
+              class="carousel-control-next teachers-section__button-next"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="next"
+            >
+              <div class="teachers-section__circle-next circle">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 19V5"
+                    stroke="white"
+                    style="stroke: #007aff; stroke-opacity: 1"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17 13.999L11.999 19L6.99805 13.999"
+                    stroke="white"
+                    style="stroke: #007aff; stroke-opacity: 1"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div
+          id="carouselExampleFade"
+          class="carousel slide carousel-fade teachers-section__carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="teachers-section__teacher">
+                <img src="img/Rectangle 18.png" alt="" />
+                <p class="teachers-section__name">Михайло Мельник</p>
+              </div>
+              <div class="teachers-section__teacher teacher">
+                <img src="img/Rectangle 19.png" alt="" />
+                <p class="teachers-section__name">Ігор Дмитришин</p>
+              </div>
+              <div class="teachers-section__teacher teacher">
+                <img src="img/Rectangle 20.png" alt="" />
+                <p class="teachers-section__name">Михайло Сорокін</p>
+              </div>
+              <div class="teachers-section__teacher teacher">
+                <img src="img/Rectangle 21.png" alt="" />
+                <p class="teachers-section__name">Ельза Сагура</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="teachers-section__teacher teacher">
+                <img src="img/guest.jpg" alt="" />
+                <p class="teachers-section__name">...</p>
+              </div>
+              <div class="teachers-section__teacher teacher">
+                <img src="img/guest.jpg" alt="" />
+                <p class="teachers-section__name">...</p>
+              </div>
+              <div class="teachers-section__teacher teacher">
+                <img src="img/guest.jpg" alt="" />
+                <p class="teachers-section__name">...</p>
+              </div>
+              <div class="teachers-section__teacher teacher">
+                <img src="img/guest.jpg" alt="" />
+                <p class="teachers-section__name">...</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="teachers-section__teacher teacher">
+                <img src="img/guest.jpg" alt="" />
+                <p class="teachers-section__name">...</p>
+              </div>
+              <div class="teachers-section__teacher teacher">
+                <img src="img/guest.jpg" alt="" />
+                <p class="teachers-section__name">...</p>
+              </div>
+              <div class="teachers-section__teacher teacher">
+                <img src="img/guest.jpg" alt="" />
+                <p class="teachers-section__name">...</p>
+              </div>
+              <div class="teachers-section__teacher teacher">
+                <img src="img/guest.jpg" alt="" />
+                <p class="teachers-section__name">...</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="teachers-section__teacher teacher">
+                <img src="img/guest.jpg" alt="" />
+                <p class="teachers-section__name">...</p>
+              </div>
+              <div class="teachers-section__teacher teacher">
+                <img src="img/guest.jpg" alt="" />
+                <p class="teachers-section__name">...</p>
+              </div>
+              <div class="teachers-section__teacher teacher">
+                <img src="img/guest.jpg" alt="" />
+                <p class="teachers-section__name">...</p>
+              </div>
+              <div class="teachers-section__teacher teacher">
+                <img src="img/guest.jpg" alt="" />
+                <p class="teachers-section__name">...</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="graduates-section">
+      <div class="graduates-section__container container">
+        <h2 class="graduates-section__title title-black">НАШІ ВИПУСКНИКИ</h2>
+      </div>
+      <div class="graduates-section__slider logoss">
+        <div class="logoss__slide">
+          <div class="logoss__item">
+            <img
+              src="img/Logo_EdC_con_scritta_en-1024x333.png"
+              alt="Логотип 1"
+            />
+          </div>
+          <div class="logoss__item">
+            <img src="img/image_2024-03-22_12-45-41.png" alt="Логотип 2" />
+          </div>
+          <div class="logoss__item">
+            <img src="img/EVPA-logo-name-blue-RGB-pos.png" alt="Логотип 3" />
+          </div>
+          <div class="logoss__item">
+            <img src="img/Logo-EoF2020-tracciato.png" alt="Логотип 4" />
+          </div>
+          <div class="logoss__item">
+            <img
+              src="img/image_2024-03-22_12-45-41 (1) (1).png"
+              alt="Логотип 5"
+            />
+          </div>
+        </div>
+        <div class="logoss__slide">
+          <div class="logoss__item">
+            <img
+              src="img/Logo_EdC_con_scritta_en-1024x333.png"
+              alt="Логотип 1"
+            />
+          </div>
+          <div class="logoss__item">
+            <img src="img/image_2024-03-22_12-45-41.png" alt="Логотип 2" />
+          </div>
+          <div class="logoss__item">
+            <img src="img/EVPA-logo-name-blue-RGB-pos.png" alt="Логотип 3" />
+          </div>
+          <div class="logoss__item">
+            <img src="img/Logo-EoF2020-tracciato.png" alt="Логотип 4" />
+          </div>
+          <div class="logoss__item">
+            <img
+              src="img/image_2024-03-22_12-45-41 (1) (1).png"
+              alt="Логотип 5"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="input-section">
+      <form class="input-section__form">
+        <svg
+          class="input-section__background"
+          width="1206"
+          height="800"
+          viewBox="0 0 1206 800"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            opacity="0.1"
+            d="M42.568 540.292C89.5364 645.721 197.049 710.16 308.854 697.477C511.441 674.491 742.415 495.133 896.291 410.267C946.096 382.8 1002.96 370.102 1059.64 376.622C1422.11 418.322 1030.38 1098.58 564.901 921.204C485.643 891.002 436.116 808.261 447.143 723.105C447.477 720.543 447.841 717.941 448.243 715.309C474.343 543.466 487.828 400.282 491.347 282.229C521.109 -715.925 -161.565 82.0966 42.568 540.292Z"
+            stroke="white"
+            style="stroke: white; stroke-opacity: 1"
+            stroke-width="7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+
+        <div class="form-group col-7">
+          <h2 class="input-section__title title_white">
+            Хочете дізнатися <br />
+            більше про навчання в академії?
+          </h2>
+          <div class="row">
+            <div class="col">
+              <input
+                required="true"
+                type="text"
+                class="form-control"
+                id="inputName"
+                placeholder="Ім’я та прізвище"
+              />
+            </div>
+            <div class="col">
+              <input
+                required="true"
+                type="email"
+                class="form-control"
+                id="inputEmail"
+                placeholder="E-mail"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input
+                required="true"
+                type="text"
+                class="form-control"
+                id="inputOrgan"
+                placeholder="Назва організації"
+              />
+            </div>
+            <div class="col">
+              <input
+                required="true"
+                type="text"
+                class="form-control"
+                id="inputNumber"
+                placeholder="Номер телефону"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <textarea
+                required="true"
+                style="resize: none"
+                class="form-control"
+                id="inputDescr"
+                placeholder="Опишіть ваш запит або ідею"
+              ></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary form__submit">
+            Надіслати
+            <svg
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.5 12.5H5.5"
+                stroke="white"
+                style="stroke: white; stroke-opacity: 1"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M14.498 7.49898L19.499 12.5L14.498 17.501"
+                stroke="white"
+                style="stroke: white; stroke-opacity: 1"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="input-section__image"></div>
+      </form>
+    </section>
+    <footer class="footer-about footer">
+      <div class="footer__container container">
+        <div class="footer__topics">
+          <a href="courses.html">Курси</a>
+          <a href="webinars.html">Вебінари</a>
+          <a href="about.html">Про академію</a>
+          <a href="contacts.html">Контакти</a>
+        </div>
+        <div class="footer__info">
+          <div class="footer__number-mail">
+            <p>+38 (044) 232 83 99</p>
+            <p>info@social-change.com.ua</p>
+          </div>
+          <div class="footer__socials">
+            <a href="" class="footer__social"
+              ><img src="icons/facebook.svg" alt=""
+            /></a>
+            <a href="" class="footer__social"
+              ><img src="icons/insta.svg" alt=""
+            /></a>
+            <a href="" class="footer__social"
+              ><img src="icons/linkedin.svg" alt=""
+            /></a>
+            <a href="" class="footer__social"
+              ><img src="icons/tg.svg" alt=""
+            /></a>
+          </div>
+          <div class="footer__icon icon">
+            <img class="icon__img" src="icons/logo-white.svg" alt="" />
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p>© 2024 Платформа Соціальних Змін. Всі права захищені.</p>
+          <a href="confident.html">Політика конфіденційності</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/passwordChanger.js"></script>
+    <script src="js/burger.js"></script>
+  </body>
+</html>

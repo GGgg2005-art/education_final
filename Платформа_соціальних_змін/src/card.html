@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/card.css" />
+    <title>Інформація</title>
+  </head>
+
+  <body>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <svg
+            class="modal-close"
+            data-bs-dismiss="modal"
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13 1L1 13M1 1L13 13"
+              stroke="white"
+              style="stroke: white; stroke-opacity: 1"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+          <h2 class="modal-title">Вхід</h2>
+          <input
+            type="email"
+            id="exampleFormControlInput1"
+            placeholder="E-mail"
+          />
+          <div class="password-container">
+            <input
+              type="text"
+              class="inputPassword"
+              id="inputPassword"
+              placeholder="Пароль"
+            />
+            <span class="toggle-password" onclick="togglePassword()">
+              <svg
+                width="22"
+                height="20"
+                viewBox="0 0 22 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.74294 3.09232C10.1494 3.03223 10.5686 3 11.0004 3C16.1054 3 19.4553 7.50484 20.5807 9.28682C20.7169 9.5025 20.785 9.61034 20.8231 9.77667C20.8518 9.90159 20.8517 10.0987 20.8231 10.2236C20.7849 10.3899 20.7164 10.4985 20.5792 10.7156C20.2793 11.1901 19.8222 11.8571 19.2165 12.5805M5.72432 4.71504C3.56225 6.1817 2.09445 8.21938 1.42111 9.28528C1.28428 9.50187 1.21587 9.61016 1.17774 9.77648C1.1491 9.9014 1.14909 10.0984 1.17771 10.2234C1.21583 10.3897 1.28393 10.4975 1.42013 10.7132C2.54554 12.4952 5.89541 17 11.0004 17C13.0588 17 14.8319 16.2676 16.2888 15.2766M2.00042 1L20.0004 19M8.8791 7.87868C8.3362 8.42157 8.00042 9.17157 8.00042 10C8.00042 11.6569 9.34356 13 11.0004 13C11.8288 13 12.5788 12.6642 13.1217 12.1213"
+                  stroke="#007AFF"
+                  style="
+                    stroke: #007aff;
+                    stroke: color(display-p3 0 0.4784 1);
+                    stroke-opacity: 1;
+                  "
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </div>
+          <button class="sign_in modal-sign_in">Увійти</button>
+          <div class="modal-or">
+            <hr class="modal-line" />
+            <p>або</p>
+            <hr class="modal-line" />
+          </div>
+          <div class="social-login-buttons">
+            <button class="social-button google">
+              <svg
+                width="24.000000"
+                height="24.000000"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <clipPath id="clip403_13230">
+                  <rect
+                    id="Social icon"
+                    rx="0.000000"
+                    width="23.500000"
+                    height="23.500000"
+                    transform="translate(0.250000 0.250000)"
+                    fill="white"
+                    fill-opacity="0"
+                  />
+                </clipPath>
+                <rect
+                  rx="0.000000"
+                  width="23.500000"
+                  height="23.500000"
+                  transform="translate(0.250000 0.250000)"
+                  fill="#FFFFFF"
+                  fill-opacity="0"
+                />
+                <g clip-path="url(#clip403_13230)">
+                  <path
+                    d="M23.76 12.27C23.76 11.46 23.7 10.64 23.55 9.83L12.24 9.83L12.24 14.45L18.72 14.45C18.45 15.94 17.58 17.26 16.32 18.1L16.32 21.1L20.18 21.1C22.46 19.01 23.76 15.92 23.76 12.27Z"
+                    fill="#4285F4"
+                    fill-opacity="1.000000"
+                    fill-rule="nonzero"
+                  />
+                  <path
+                    d="M12.24 24C15.47 24 18.2 22.93 20.19 21.1L16.32 18.1C15.25 18.83 13.86 19.25 12.24 19.25C9.11 19.25 6.45 17.13 5.5 14.3L1.51 14.3L1.51 17.39C3.55 21.44 7.7 24 12.24 24Z"
+                    fill="#34A853"
+                    fill-opacity="1.000000"
+                    fill-rule="nonzero"
+                  />
+                  <path
+                    d="M5.5 14.3C4.99 12.8 4.99 11.19 5.5 9.7L5.5 6.61L1.51 6.61C-0.19 10 -0.19 14 1.51 17.39L5.5 14.3Z"
+                    fill="#FBBC04"
+                    fill-opacity="1.000000"
+                    fill-rule="nonzero"
+                  />
+                  <path
+                    d="M12.24 4.74C13.95 4.72 15.6 5.36 16.84 6.54L20.26 3.12C18.1 1.08 15.22 -0.04 12.24 0C7.7 0 3.55 2.55 1.51 6.61L5.5 9.7C6.45 6.86 9.1 4.74 12.24 4.74Z"
+                    fill="#EA4335"
+                    fill-opacity="1.000000"
+                    fill-rule="nonzero"
+                  />
+                </g>
+              </svg>
+              Вхід через Google
+            </button>
+            <button class="social-button facebook">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_403_13233)">
+                  <path
+                    d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z"
+                    fill="#1877F2"
+                    style="
+                      fill: #1877f2;
+                      fill: color(display-p3 0.0941 0.4667 0.949);
+                      fill-opacity: 1;
+                    "
+                  />
+                  <path
+                    d="M16.6711 15.4688L17.2031 12H13.875V9.75C13.875 8.80102 14.34 7.875 15.8306 7.875H17.3438V4.92188C17.3438 4.92188 15.9705 4.6875 14.6576 4.6875C11.9166 4.6875 10.125 6.34875 10.125 9.35625V12H7.07812V15.4688H10.125V23.8542C11.3674 24.0486 12.6326 24.0486 13.875 23.8542V15.4688H16.6711Z"
+                    fill="white"
+                    style="fill: white; fill-opacity: 1"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_403_13233">
+                    <rect
+                      width="24"
+                      height="24"
+                      fill="white"
+                      style="fill: white; fill-opacity: 1"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              Вхід через Facebook
+            </button>
+          </div>
+          <p class="modal-to-registration">
+            У вас ще немає аккаунта?
+            <button
+              class="registration"
+              data-bs-toggle="modal"
+              data-bs-target="#RegistrationModal"
+            >
+              Зареєструватися
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="RegistrationModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <svg
+            class="modal-close"
+            data-bs-dismiss="modal"
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13 1L1 13M1 1L13 13"
+              stroke="white"
+              style="stroke: white; stroke-opacity: 1"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <h2 class="modal-title">Реєстрація</h2>
+          <div class="social-login-buttons">
+            <button class="social-button google">
+              <svg
+                width="24.000000"
+                height="24.000000"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <clipPath id="clip403_13230">
+                  <rect
+                    id="Social icon"
+                    rx="0.000000"
+                    width="23.500000"
+                    height="23.500000"
+                    transform="translate(0.250000 0.250000)"
+                    fill="white"
+                    fill-opacity="0"
+                  />
+                </clipPath>
+                <rect
+                  rx="0.000000"
+                  width="23.500000"
+                  height="23.500000"
+                  transform="translate(0.250000 0.250000)"
+                  fill="#FFFFFF"
+                  fill-opacity="0"
+                />
+                <g clip-path="url(#clip403_13230)">
+                  <path
+                    d="M23.76 12.27C23.76 11.46 23.7 10.64 23.55 9.83L12.24 9.83L12.24 14.45L18.72 14.45C18.45 15.94 17.58 17.26 16.32 18.1L16.32 21.1L20.18 21.1C22.46 19.01 23.76 15.92 23.76 12.27Z"
+                    fill="#4285F4"
+                    fill-opacity="1.000000"
+                    fill-rule="nonzero"
+                  />
+                  <path
+                    d="M12.24 24C15.47 24 18.2 22.93 20.19 21.1L16.32 18.1C15.25 18.83 13.86 19.25 12.24 19.25C9.11 19.25 6.45 17.13 5.5 14.3L1.51 14.3L1.51 17.39C3.55 21.44 7.7 24 12.24 24Z"
+                    fill="#34A853"
+                    fill-opacity="1.000000"
+                    fill-rule="nonzero"
+                  />
+                  <path
+                    d="M5.5 14.3C4.99 12.8 4.99 11.19 5.5 9.7L5.5 6.61L1.51 6.61C-0.19 10 -0.19 14 1.51 17.39L5.5 14.3Z"
+                    fill="#FBBC04"
+                    fill-opacity="1.000000"
+                    fill-rule="nonzero"
+                  />
+                  <path
+                    d="M12.24 4.74C13.95 4.72 15.6 5.36 16.84 6.54L20.26 3.12C18.1 1.08 15.22 -0.04 12.24 0C7.7 0 3.55 2.55 1.51 6.61L5.5 9.7C6.45 6.86 9.1 4.74 12.24 4.74Z"
+                    fill="#EA4335"
+                    fill-opacity="1.000000"
+                    fill-rule="nonzero"
+                  />
+                </g>
+              </svg>
+              Вхід через Google
+            </button>
+            <button class="social-button facebook">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_403_13233)">
+                  <path
+                    d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z"
+                    fill="#1877F2"
+                    style="
+                      fill: #1877f2;
+                      fill: color(display-p3 0.0941 0.4667 0.949);
+                      fill-opacity: 1;
+                    "
+                  />
+                  <path
+                    d="M16.6711 15.4688L17.2031 12H13.875V9.75C13.875 8.80102 14.34 7.875 15.8306 7.875H17.3438V4.92188C17.3438 4.92188 15.9705 4.6875 14.6576 4.6875C11.9166 4.6875 10.125 6.34875 10.125 9.35625V12H7.07812V15.4688H10.125V23.8542C11.3674 24.0486 12.6326 24.0486 13.875 23.8542V15.4688H16.6711Z"
+                    fill="white"
+                    style="fill: white; fill-opacity: 1"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_403_13233">
+                    <rect
+                      width="24"
+                      height="24"
+                      fill="white"
+                      style="fill: white; fill-opacity: 1"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              Вхід через Facebook
+            </button>
+          </div>
+          <div class="modal-or">
+            <hr class="modal-line" />
+            <p>або</p>
+            <hr class="modal-line" />
+          </div>
+          <input type="text" id="inputName" placeholder="І'мя" />
+          <input type="text" id="inputSurname" placeholder="Прізвище" />
+          <input
+            type="tel"
+            id="inputNumber"
+            placeholder="Телефон"
+            pattern="^\+380\s\(\d{2}\)\s\d{3}-\d{2}-\d{2}$"
+          />
+          <input
+            type="email"
+            id="exampleFormControlInput2"
+            placeholder="E-mail"
+          />
+
+          <div class="password-container">
+            <input
+              type="password"
+              class="inputPassword"
+              id="inputPassword2"
+              placeholder="Пароль"
+            />
+            <span class="toggle-password" onclick="togglePassword()">
+              <svg
+                width="22"
+                height="20"
+                viewBox="0 0 22 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.74294 3.09232C10.1494 3.03223 10.5686 3 11.0004 3C16.1054 3 19.4553 7.50484 20.5807 9.28682C20.7169 9.5025 20.785 9.61034 20.8231 9.77667C20.8518 9.90159 20.8517 10.0987 20.8231 10.2236C20.7849 10.3899 20.7164 10.4985 20.5792 10.7156C20.2793 11.1901 19.8222 11.8571 19.2165 12.5805M5.72432 4.71504C3.56225 6.1817 2.09445 8.21938 1.42111 9.28528C1.28428 9.50187 1.21587 9.61016 1.17774 9.77648C1.1491 9.9014 1.14909 10.0984 1.17771 10.2234C1.21583 10.3897 1.28393 10.4975 1.42013 10.7132C2.54554 12.4952 5.89541 17 11.0004 17C13.0588 17 14.8319 16.2676 16.2888 15.2766M2.00042 1L20.0004 19M8.8791 7.87868C8.3362 8.42157 8.00042 9.17157 8.00042 10C8.00042 11.6569 9.34356 13 11.0004 13C11.8288 13 12.5788 12.6642 13.1217 12.1213"
+                  stroke="#007AFF"
+                  style="
+                    stroke: #007aff;
+                    stroke: color(display-p3 0 0.4784 1);
+                    stroke-opacity: 1;
+                  "
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </div>
+          <div class="password-container">
+            <input
+              type="password"
+              class="inputPassword"
+              id="confirmPassword"
+              aria-describedby="passwordHelpBlock"
+              placeholder="Підтвердіть пароль"
+            />
+            <span class="toggle-password" onclick="togglePassword()">
+              <svg
+                width="22"
+                height="20"
+                viewBox="0 0 22 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.74294 3.09232C10.1494 3.03223 10.5686 3 11.0004 3C16.1054 3 19.4553 7.50484 20.5807 9.28682C20.7169 9.5025 20.785 9.61034 20.8231 9.77667C20.8518 9.90159 20.8517 10.0987 20.8231 10.2236C20.7849 10.3899 20.7164 10.4985 20.5792 10.7156C20.2793 11.1901 19.8222 11.8571 19.2165 12.5805M5.72432 4.71504C3.56225 6.1817 2.09445 8.21938 1.42111 9.28528C1.28428 9.50187 1.21587 9.61016 1.17774 9.77648C1.1491 9.9014 1.14909 10.0984 1.17771 10.2234C1.21583 10.3897 1.28393 10.4975 1.42013 10.7132C2.54554 12.4952 5.89541 17 11.0004 17C13.0588 17 14.8319 16.2676 16.2888 15.2766M2.00042 1L20.0004 19M8.8791 7.87868C8.3362 8.42157 8.00042 9.17157 8.00042 10C8.00042 11.6569 9.34356 13 11.0004 13C11.8288 13 12.5788 12.6642 13.1217 12.1213"
+                  stroke="#007AFF"
+                  style="
+                    stroke: #007aff;
+                    stroke: color(display-p3 0 0.4784 1);
+                    stroke-opacity: 1;
+                  "
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </div>
+
+          <label>
+            <input class="real-checkbox" type="checkbox" id="confirmDog" />
+            <span class="custom-checkbox"></span>
+            Я примаю <a href="confident.html"> Договір публічної оферти</a>
+          </label>
+          <!-- ТУТ КАПЧА -->
+          <button class="sign_in modal-sign_in">Зареєструватися</button>
+          <p class="modal-to-registration">
+            У вас є аккаунт?
+            <button
+              class="registration"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Увійти
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <section class="webinar-iner-start-section">
+      <div class="container webinar-iner-start-section__container">
+        <header class="webinar-iner-start-section__header header">
+          <a class="webinar-iner-start-section__icon icon" href="index.html">
+            <img src="icons/logo-blue.svg" alt="" />
+          </a>
+          <nav class="webinar-iner__nav nav-menu">
+            <ul class="nav-menu__list">
+              <li class="nav-menu__list-item">
+                <a href="calendar.html">Календар</a>
+              </li>
+              <li class="nav-menu__list-item">
+                <a href="courses.html">Курси</a>
+              </li>
+              <li class="nav-menu__list-item">
+                <a href="webinars.html">Вебінари</a>
+              </li>
+              <li class="nav-menu__list-item">
+                <a href="about.html">Про академію</a>
+              </li>
+              <li class="nav-menu__list-item">
+                <a href="contacts.html">Контакти</a>
+              </li>
+              <li class="nav-menu__list-item">
+                <button
+                  class="sign_in"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Увійти
+                  <img src="icons/right-white.svg" alt="" />
+                </button>
+              </li>
+            </ul>
+          </nav>
+          <div class="burger-menu burger-blue">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </header>
+      </div>
+    </section>
+    <section class="webinar-iner-main-section">
+      <svg
+        class="webinar-iner-main-section__background"
+        width="819"
+        height="1130"
+        viewBox="0 0 819 1130"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          opacity="0.1"
+          d="M271.377 1096.82C356.245 1156.04 455.61 1121.3 516.186 1008.43C625.944 803.923 668.916 423.302 716.119 203.066C731.398 131.783 758.857 68.363 796.51 23.6206C1037.33 -262.55 1166.21 745.06 790.524 993.331C726.555 1035.6 652.317 1000.53 613.276 908.614C612.102 905.846 610.926 903.013 609.756 900.117C533.291 711.17 464.6 561.173 403.385 444.343C-114.192 -543.473 -97.4679 839.442 271.377 1096.82Z"
+          stroke="#007CFF"
+          style="
+            stroke: #007cff;
+            stroke: color(display-p3 0 0.4863 1);
+            stroke-opacity: 1;
+          "
+          stroke-width="7"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+
+      <div class="webinar-iner-main-section__container container">
+        <h2 class="webinar-iner-main-section__title title-black">
+          Управління фінансовою діяльністю в релігійній організації
+        </h2>
+        <div class="webinar-iner-main-section__information">
+          <div class="webinar-iner-main-section__card event-card">
+            <div class="event-card__top">
+              <div class="event-card__course">
+                <p>ВЕБІНАР</p>
+              </div>
+              <div class="event-card__online">
+                <div class="event-card__dot dot dot_green"></div>
+                <p>ОНЛАЙН</p>
+              </div>
+            </div>
+            <div class="event-card__bottom">
+              <div class="event-card__hashtag grom">
+                <p>#громадський сектор</p>
+              </div>
+            </div>
+          </div>
+          <div class="webinar-iner-main-section__text gray-block">
+            <div class="webinar-iner-main-section__date">
+              06.03.2024 - 24.06.2024
+            </div>
+            <div class="webinar-iner-main-section__subtitle">
+              Про серію вебінарів
+            </div>
+            <div class="webinar-iner-main-section__card-text">
+              Управління фінансовою діяльністю в релігійній організації - це
+              п’ять унікальних вебінарів про організацію та керування фінансами
+              в парафіяльній громаді (спільноті), благодійному проекті (фонді),
+              монастирі, місії, церковній інституції чи іншій релігійній
+              організації (далі РО).
+            </div>
+            <div class="webinar-iner-main-section__price">
+              Вартість: <span>безкоштовно</span>
+            </div>
+            <a class="webinar-iner-main-section__to-events to-button" href="">
+              Записатись на вебінар
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.5 12.5H5.5"
+                  stroke="white"
+                  style="stroke: white; stroke-opacity: 1"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.498 7.49898L19.499 12.5L14.498 17.501"
+                  stroke="white"
+                  style="stroke: white; stroke-opacity: 1"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="webinar-iner-main-section__about gray-block">
+          <div class="webinar-iner-main-section__subtitle">Про програму</div>
+          <div class="webinar-iner-main-section__card-text">
+            Управління фінансовою діяльністю в релігійній організації - це серія
+            вебінарів про організацію та керування фінансами в парафіяльній
+            громаді (спільноті), благодійному проекті (фонді), монастирі, місії,
+            церковній інституції чи іншій релігійній організації (далі РО).
+          </div>
+          <div class="webinar-iner-main-section__card-text">
+            Ми часто спостерігаємо за ситуацією, коли в церковних спільнотах не
+            визначено цілі та способи реалізації і не проаналізовано
+            економіко-фінансову сумісність. Щоб бути добрими розпорядниками,
+            священики,  богопосвячені особи та працівники РО повинні володіти
+            базовим розумінням типових фінансових рішень та метриками щодо
+            їхньої оцінки. Це розуміння надає можливості більш ефективно служити
+            спільноті. 
+          </div>
+        </div>
+        <div class="webinar-iner-main-section__module">
+          <h2 class="question-section__title title-black">Розклад</h2>
+          <div class="question-section__accordions">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  МОДУЛЬ 1. УПРАВЛІННЯ ФІНАНСАМИ В РЕЛІГІЙНІЙ ОРГАНІЗАЦІЇ
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">...</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  МОДУЛЬ 2: ПОТОЧНА ФІНАНСОВА ДІЯЛЬНІСТЬ, ОПОДАТКУВАННЯ
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">...</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  МОДУЛЬ 3: БЮДЖЕТУВАННЯ ПРОЕКТІВ КАПІТАЛОВКЛАДЕНЬ
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">...</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFourth"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  МОДУЛЬ 4: ФІНАНСУВАННЯ ДІЯЛЬНОСТІ, УПРАВЛІННЯ РИЗИКАМИ
+                </button>
+              </h2>
+              <div
+                id="collapseFourth"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">...</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#fifth"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  МОДУЛЬ 5: ФІНАНСОВЕ ПЛАНУВАННЯ І ПОКАЗНИКИ
+                </button>
+              </h2>
+              <div
+                id="fifth"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">....</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="webinar-iner-main-section__get gray-block">
+          <div class="webinar-iner-main-section__subtitle">
+            Що отримає учасник вебінарів:
+          </div>
+          <ul>
+            <li>
+              <div class="webinar-iner-main-section__card-text">
+                необхідні базові знання з управління фінансами у релігійній
+                організації
+              </div>
+            </li>
+            <li>
+              <div class="webinar-iner-main-section__card-text">
+                доступ до літератури та корисних матеріалів в даній темі; 
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="webinar-iner-main-section__speakers gray-block">
+          <div
+            class="webinar-iner-main-section__subtitle webinar-iner-main-section__speakers-subtitle"
+          >
+            Спікери
+          </div>
+          <div class="webinar-iner-main-section__speakers-cards">
+            <button
+              class="teachers-section__teacher"
+              data-bs-toggle="modal"
+              data-bs-target="#mentor-1"
+            >
+              <img src="img/Rectangle 18.png" alt="" />
+              <p class="teachers-section__name">Михайло Мельник</p>
+            </button>
+            <button
+              data-bs-toggle="modal"
+              data-bs-target="#mentor-2"
+              class="teachers-section__teacher"
+            >
+              <img src="img/Rectangle 19.png" alt="" />
+              <p class="teachers-section__name">Ігор Дмитришин</p>
+            </button>
+            <button
+              data-bs-toggle="modal"
+              data-bs-target="#mentor-3"
+              class="teachers-section__teacher"
+            >
+              <img src="img/Rectangle 20.png" alt="" />
+              <p class="teachers-section__name">Михайло Сорокін</p>
+            </button>
+            <button
+              data-bs-toggle="modal"
+              data-bs-target="#mentor-4"
+              class="teachers-section__teacher"
+            >
+              <img src="img/Rectangle 21.png" alt="" />
+              <p class="teachers-section__name">Ельза Сагура</p>
+            </button>
+          </div>
+        </div>
+        <div class="webinar-iner-main-section__launch">
+          <svg
+            class="launch__background"
+            width="831"
+            height="373"
+            viewBox="0 0 831 373"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              opacity="0.1"
+              d="M756.59 -75.0161C703.514 -146.53 610.331 -176.443 526.19 -147.266C373.735 -94.4037 224.434 81.7062 119.421 172.84C85.4313 202.34 43.6392 221.903 -1.08911 226.896C-287.125 258.844 -94.1129 -324.272 293.035 -271.637C358.958 -262.675 410.37 -208.763 415.506 -142.427C415.66 -140.429 415.798 -138.399 415.909 -136.338C423.308 -1.79603 435.838 108.864 452.025 198.773C588.892 958.943 987.276 235.8 756.59 -75.0108V-75.0161Z"
+              stroke="white"
+              style="stroke: white; stroke-opacity: 1"
+              stroke-width="7"
+              stroke-miterlimit="10"
+            />
+          </svg>
+
+          <h2 class="webinar-iner-main-section__launch-title">
+            Отримайте доступ до вебінару!
+          </h2>
+          <p class="webinar-iner-main-section__launch-text">
+            Дізнайтеся найновіші стратегії та інсайти, які допоможуть вам
+            досягти успіху. Не пропустіть можливість отримати цінні знання від
+            експертів!
+          </p>
+          <a
+            class="webinar-iner-main-section__launch-btn to-button"
+            href="card.html"
+          >
+            Записатись на вебінар
+            <svg
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 12.5H5"
+                stroke="#007AFF"
+                style="
+                  stroke: #007aff;
+                  stroke: color(display-p3 0 0.4784 1);
+                  stroke-opacity: 1;
+                "
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M13.999 7.49898L19 12.5L13.999 17.501"
+                stroke="#007AFF"
+                style="
+                  stroke: #007aff;
+                  stroke: color(display-p3 0 0.4784 1);
+                  stroke-opacity: 1;
+                "
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="webinar-iner-main-section__events">
+          <h2 class="second-section__title title-black">СКОРО ВІДБУДЕТЬСЯ</h2>
+          <div class="second-section__soon-events">
+            <div class="event-card">
+              <div class="event-card__top">
+                <div class="event-card__course">
+                  <p>КУРС</p>
+                </div>
+                <div class="event-card__online">
+                  <div class="event-card__dot dot dot_green"></div>
+                  <p>ОНЛАЙН</p>
+                </div>
+              </div>
+              <div class="event-card__bottom">
+                <div class="event-card__hashtag grom">
+                  <p>#громадський сектор</p>
+                </div>
+              </div>
+              <div class="event-card__subtext">
+                <p class="event-card__date">початок - 14 березня 2024</p>
+                <h3 class="event-card__course-title">Дуже цікавий курс тут</h3>
+                <p class="event-card__description">Короткий опис</p>
+              </div>
+            </div>
+            <div class="event-card">
+              <div class="event-card__top">
+                <div class="event-card__course">
+                  <p>ВЕБІНАР</p>
+                </div>
+                <div class="event-card__online">
+                  <div class="event-card__dot dot dot_green"></div>
+                  <p>ОНЛАЙН</p>
+                </div>
+              </div>
+              <div class="event-card__bottom">
+                <div class="event-card__hashtag bus">
+                  <p>#бізнес</p>
+                </div>
+              </div>
+              <div class="event-card__subtext">
+                <p class="event-card__date">початок - 14 березня 2024</p>
+                <h3 class="event-card__course-title">Дуже цікавий курс тут</h3>
+                <p class="event-card__description">Короткий опис</p>
+              </div>
+            </div>
+            <div class="event-card">
+              <div class="event-card__top">
+                <div class="event-card__course">
+                  <p>ВЕБІНАР</p>
+                </div>
+                <div class="event-card__online">
+                  <div class="event-card__dot dot dot_red"></div>
+                  <p>ОФЛАЙН</p>
+                </div>
+              </div>
+              <div class="event-card__bottom">
+                <div class="event-card__hashtag rel">
+                  <p>#релігійні організації</p>
+                </div>
+              </div>
+              <div class="event-card__subtext">
+                <p class="event-card__date">початок - 14 березня 2024</p>
+                <h3 class="event-card__course-title">Дуже цікавий курс тут</h3>
+                <p class="event-card__description">Короткий опис</p>
+              </div>
+            </div>
+          </div>
+          <a href="calendar.html" class="to-button">
+            Переглянути календар подій
+            <svg
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.5 12.5H5.5"
+                stroke="white"
+                style="stroke: white; stroke-opacity: 1"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M14.498 7.49898L19.499 12.5L14.498 17.501"
+                stroke="white"
+                style="stroke: white; stroke-opacity: 1"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-about footer">
+      <div class="footer__container container">
+        <div class="footer__topics">
+          <a href="courses.html">Курси</a>
+          <a href="webinars.html">Вебінари</a>
+          <a href="about.html">Про академію</a>
+          <a href="contacts.html">Контакти</a>
+        </div>
+        <div class="footer__info">
+          <div class="footer__number-mail">
+            <p>+38 (044) 232 83 99</p>
+            <p>info@social-change.com.ua</p>
+          </div>
+          <div class="footer__socials">
+            <a href="" class="footer__social"
+              ><img src="icons/facebook.svg" alt=""
+            /></a>
+            <a href="" class="footer__social"
+              ><img src="icons/insta.svg" alt=""
+            /></a>
+            <a href="" class="footer__social"
+              ><img src="icons/linkedin.svg" alt=""
+            /></a>
+            <a href="" class="footer__social"
+              ><img src="icons/tg.svg" alt=""
+            /></a>
+          </div>
+          <div class="footer__icon icon">
+            <img class="icon__img" src="icons/logo-white.svg" alt="" />
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p>© 2024 Платформа Соціальних Змін. Всі права захищені.</p>
+          <a href="confident.html">Політика конфіденційності</a>
+        </div>
+      </div>
+    </footer>
+    <div id="mentor-1" class="modal fade">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <svg
+            class="modal-close"
+            data-bs-dismiss="modal"
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13 1L1 13M1 1L13 13"
+              stroke="white"
+              style="stroke: white; stroke-opacity: 1"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <div class="modal-mentor">
+            <img
+              src="https://social-change.com.ua/wp-content/uploads/2024/04/image-1-2.jpg"
+              alt="Михайло Мельник"
+            />
+            <div class="text">
+              <div class="title">Михайло Мельник</div>
+              Доктор філософії, викладач, ментор, бізнес-консультант,
+              співзасновник Платформи соціальних змін.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mentor-2" class="modal fade">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <svg
+            class="modal-close"
+            data-bs-dismiss="modal"
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13 1L1 13M1 1L13 13"
+              stroke="white"
+              style="stroke: white; stroke-opacity: 1"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <div class="modal-mentor">
+            <img
+              src="https://social-change.com.ua/wp-content/uploads/2024/04/image-2-2.jpg"
+              alt="Ігор Дмитришин"
+            />
+            <div class="text">
+              <div class="title">Ігор Дмитришин</div>
+              Менеджер БФ "Платформа соціальних змін". Розробник та керівник
+              онлайн програм для ОГС та СП. Тренер, ментор з розробки
+              бізнес-моделей та стратегії для ОГС та соціальних підприємств.
+              Випускник КБМШ, програма "Менеджмент: мистецтво прийняття
+              управлінських рішень".
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mentor-3" class="modal fade">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <svg
+            class="modal-close"
+            data-bs-dismiss="modal"
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13 1L1 13M1 1L13 13"
+              stroke="white"
+              style="stroke: white; stroke-opacity: 1"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <div class="modal-mentor">
+            <img
+              src="https://social-change.com.ua/wp-content/uploads/2024/04/image-3-2.jpg"
+              alt="Михайло Сорокін"
+            />
+            <div class="text">
+              <div class="title">Михайло Сорокін</div>
+              PhD, доцент, MBA, MA, MSc. Професор Міжнародного інституту
+              бізнесу. Має 25 річний досвід роботи у сфері бізнес-освіти і
+              консалтингу з питань фінансового менеджменту, фінансового та
+              кредитного аналізу, бізнес-планування, соціального та
+              інноваційного підприємництва.h
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mentor-4" class="modal fade">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <svg
+            class="modal-close"
+            data-bs-dismiss="modal"
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13 1L1 13M1 1L13 13"
+              stroke="white"
+              style="stroke: white; stroke-opacity: 1"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <div class="modal-mentor">
+            <img
+              src="https://social-change.com.ua/wp-content/uploads/2024/04/image-4-2.jpg"
+              alt="Ельза Сагура"
+            />
+            <div class="text">
+              <div class="title">Ельза Сагура</div>
+              Співзасновниця креативної агенції Bloom Büro, маркетологиня та
+              бренд-стратегиня з 9-річним досвідом. У портфоліо має
+              найрізноманітніші проєкти: національні рітейлери, банки, продукти
+              харчування, освітні ініціативи, соціальні підприємства тощо.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/passwordChanger.js"></script>
+    <script src="js/burger.js"></script>
+  </body>
+</html>
